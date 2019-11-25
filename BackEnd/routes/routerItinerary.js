@@ -7,7 +7,7 @@ const router = express.Router();
 //requiere la ruta
 
 router
-	.route('/itinerary/')
+	.route('/itinerary/:ciudad')
 	.get(itinerarycontroller.listaritinerarios)
 	.post(itinerarycontroller.cargaritinerario);
 

@@ -2,15 +2,12 @@ import React from 'react';
 import './App.css';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import { Provider } from 'react-redux';
-import store from './Redux/Store';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Create from './Pages/Create';
 import Paises from './Pages/Paises';
 import Itinerary from './Pages/Itinerary';
-import itineraryprueba from './Pages/itineraryprueba';
+import itineraryprueba from './Pages/Itinerary';
 
 function App() {
 	return (
@@ -23,7 +20,7 @@ function App() {
 						<Route path='/Login' component={Login} />
 						<Route exact path='/Create' render={() => <Create />} />
 						<Route exact path='/Paises' render={() => <Paises />} />
-						<Route exact path='/Paises/:ciudad' component={itineraryprueba} />
+						<Route exact path='/Paises/:ciudad' component={Itinerary} />
 					</Switch>
 				</div>
 			</div>

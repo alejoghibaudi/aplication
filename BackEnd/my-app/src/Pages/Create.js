@@ -5,9 +5,9 @@ import Homebutton from '../Components/ButoonHome';
 class CreateUsser extends Component{
 	constructor(props) {
 		super(props);
-		this.state = {Usuario:[
-			
-		]};
+		this.state = {
+			Usuario:[]
+		};
 	
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);

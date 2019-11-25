@@ -1,7 +1,8 @@
 const Itinerary = require('../models/itinerarymodels');
 const itinerarycontroller = {
 	listaritinerarios: async (req, res) => {
-		const data = await Itinerary.find();
+		var ciudad = req.params.ciudad
+		const data = await Itinerary.find({ciudad: ciudad});
 		res.json({ Respuesta: data });
 	},
 	borraritinerario: async (req, res) => {
@@ -43,7 +44,7 @@ const itinerarycontroller = {
 			hashtag
 		});
 
-		await nuevaciudad.save(); //espera grabar la factura
+		await nuevaciudad.save(); //espera grabar 
 		res.send('Ciudad Cargada'); //luego manda el mesnaje
 	}
 };
