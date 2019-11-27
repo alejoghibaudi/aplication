@@ -4,20 +4,23 @@ const UsserController = {
 		var name = req.body.name;
         var secondname = req.body.secondname;
         var ussername=req.body.ussername;
-        var password=req.body.password;
+		var email=req.body.email;
+		var password=req.body.password;
         var img=req.body.img;
 		//grabamos en la base de datos
 
 		const nuevousuario = new NewUsser({
             name,
             secondname,
-            ussername,
+			ussername,
+			email,
             password,
             img
-		});
+		}); 
 
 		await nuevousuario.save(); //espera grabar la factura
 		res.send('Usuario Cargado'); //luego manda el mesnaje
+		
 	},
 	//CUANDO  LLAMEN A CITYCONTROLER Y USEN ESTE METODO
 	//QUE EJECUTE ESO

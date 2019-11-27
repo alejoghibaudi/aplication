@@ -15,6 +15,7 @@ app.use(express.json()); //si no ponemos esto la peticion llega pero no se graba
 app.use('/api', require('./routes/routerCity')); //Esto lo hacemos para no sobrecargar el archivo server.js
 app.use('/api', require('./routes/routerItinerary'));
 app.use('/api', require('./routes/routerUsser'));
+app.use(express.static('public'));
 
 //para cuando reciba una peticion /api llame a routerCity
 

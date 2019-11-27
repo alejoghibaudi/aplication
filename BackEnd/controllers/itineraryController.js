@@ -8,7 +8,7 @@ const itinerarycontroller = {
 	borraritinerario: async (req, res) => {
 		var id = req.params.id;
 		await Itinerary.findOneAndDelete({ _id: id }),
-			res.json('Respuesta: Factura Borrada');
+			res.json('Respuesta: Factura Borrada'); 
 	},
 	modificaritinerario: async (req, res) => {
 		var id = req.params.id;
