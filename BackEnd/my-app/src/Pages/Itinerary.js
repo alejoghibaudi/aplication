@@ -12,12 +12,10 @@ class Itinerary extends React.Component {
   };
  componentDidMount() {
   let ciudad = this.props.match.params.ciudad;
-
   this.props.getItemsItinerary(ciudad);
     	}
 
   render() {
-    let ciudad = this.props.match.params.ciudad;
     const { itinerary } = this.props.itinerary;
     console.log(itinerary)
     return (
@@ -29,7 +27,7 @@ class Itinerary extends React.Component {
 }
 
 const mapStateToProps = state => ({
-	itinerary: state.itmeitineray,
+	itinerary: state.itemitinerary,
 });
 
 export default connect(mapStateToProps, { getItemsItinerary })(Itinerary);

@@ -1,28 +1,23 @@
 import React from "react";
-import {Dropdown, DropdownButton,ButtonToolbar} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import '../App.css'
+import '../Estilos/Nav.css';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="nav-weapper grey">
-      <div className="container">
-        <div className="row">
-        <ul className="ContenedorBotones">
-        <ButtonToolbar>
-        <DropdownButton id="dropdown-basic-button" className="Boton1" title=" ">
-        <Dropdown.Item><Link to="/Login" className="link">Login</Link></Dropdown.Item>
-        <Dropdown.Item ><Link to="/Create" className="link">Create</Link></Dropdown.Item>
-        </DropdownButton>
-        <DropdownButton id="dropdown-basic-button" className="Boton2" title=" ">
-        <Dropdown.Item><Link to="/Paises" className="link">Paises</Link></Dropdown.Item>
-        <Dropdown.Item><Link to="/Option2" className="link">Option2</Link></Dropdown.Item>
-        </DropdownButton>
-        </ButtonToolbar>
-      </ul>
-      </div>
-      </div>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><Link to="/Paises"><span className="segundo"><i className="icon glyphicon glyphicon-globe"></i></span>Ciudades</Link></li>
+          <li><Link to="/"><span className="primero"><i className="icon glyphicon glyphicon-user"></i></span>Start</Link>
+          <ul>
+            <li><Link to="/">Log In</Link></li>
+            <li><Link to="/Create">New Usser</Link></li>
+          </ul>
+          </li>
+          <li><Link to="/Option 2"><span className="tercero"><i className="icon glyphicon glyphicon-plane"></i></span>Option 2</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 export default Navbar;

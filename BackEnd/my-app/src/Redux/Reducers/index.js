@@ -7,6 +7,6 @@ import ItineraryReducer from './ItineraryReducer';
 
 export default combineReducers({
 	item: CityReducer,
-	itmeitineray: ItineraryReducer
+	itemitinerary: ItineraryReducer
 	//you can add all reducer here
 });

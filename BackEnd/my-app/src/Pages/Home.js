@@ -1,21 +1,18 @@
 import React from "react";
-import Header from '../Components/Header';
-import FooterHome from '../Components/FooterHome';
+import Logoprincipal from '../Components/Logoprincipal';
 import Navbar from '../Components/Navbar';
 import Botonconflecha from '../Components/Buttonconflecha';
 import BotonHome from '../Components/ButoonHome';
 function Home() {
   return (
     <div className="container">
-    <div className="row"> 
-    <Navbar/>
-    <Header/>
-    <Botonconflecha/>
-    <FooterHome/>
-    <BotonHome/>
-    </div>
+      <div className="row">
+        <Navbar />
+        <Logoprincipal/>
+        <Botonconflecha/>
+        <BotonHome/>
+      </div>
     </div>
   )
 }
-export default Home; 
-  
+export default Home;

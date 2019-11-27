@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
-
+import './Estilos/Nav.css';
+import './Estilos/Logo.css';
+import './Estilos/Botones.css';
+import './Estilos/Paises.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Create from './Pages/Create';
 import Paises from './Pages/Paises';
 import Itinerary from './Pages/Itinerary';
-import itineraryprueba from './Pages/Itinerary';
 
 function App() {
 	return (

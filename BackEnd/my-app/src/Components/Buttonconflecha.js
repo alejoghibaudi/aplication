@@ -1,11 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import '../Estilos/Botones.css';
 
 function Buttonconflecha (){
     return(
-        <div className="App-flecha">
+        <div className="divboton">
             <h3>Start browsing</h3>
-            <center><Link to="/Login" className="link"><button className="Botonconnflecha"></button></Link></center>
+            <Link to="/Login" className="link"><button className="Botonflecha" type="submit"></button></Link>
         </div>
     )
 }

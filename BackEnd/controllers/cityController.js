@@ -6,13 +6,15 @@ const citycontroller = {
 	},
 
 	cargarciudades: async (req, res) => {
-		var ciudad1 = req.body.ciudad;
-		var pais1 = req.body.pais;
+		var ciudad = req.body.ciudad;
+		var pais = req.body.pais;
+		var img = req.body.img;
 		//grabamos en la base de datos
 
 		const nuevaciudad = new City({
-			ciudad: ciudad1,
-			pais: pais1
+			ciudad,
+			pais,
+			img
 		});
 
 		await nuevaciudad.save(); //espera grabar la factura
@@ -27,9 +29,10 @@ const citycontroller = {
 		var id = req.params.id;
 		var ciudad = req.body.ciudad;
 		var pais = req.body.pais;
+		var img = req.body.img;
 
-		await City.findOneAndUpdate({ _id: id }, { ciudad: ciudad, pais: pais });
-		res.json({ Respuesta: 'Okey' });
+		await City.findOneAndUpdate({ _id: id }, { ciudad: ciudad, pais: pais, img: img });
+		res.send("Ciudad Modificada" );
 	}
 
 	//CUANDO  LLAMEN A CITYCONTROLER Y USEN ESTE METODO
