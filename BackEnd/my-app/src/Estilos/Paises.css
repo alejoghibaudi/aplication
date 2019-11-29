@@ -1,3 +1,4 @@
+
 .divfiltro{
     position: relative;
     width: 100%;
@@ -20,21 +21,46 @@
 .divlistaciudades{
     position: relative;
     width: 100%;
-    height: 5%;
-    background: blue;
+    height: 100%;
+
     align-items: center;
 }
-.listaciudades{
+.divciudades{
     position: relative;
     width:100%;
-    text-align: center;
+    height: 100%;
 }
-span.textoboton{
-    position: static;
+.ulciudades{
+    position: relative;
     width: 100%;
-    font-size: 40px;
-    height: auto;
-    background: red;
+    height: 100%;
 }
 
-
+.liciudades{
+    position: relative;
+    width: 100%;
+    height:300px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: white;
+}
+.botonciudades{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    border: transparent;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+.textoboton{
+    background:black;
+}

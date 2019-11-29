@@ -1,0 +1,7 @@
+bcrypt js 
+
+Login
+
+https://www.youtube.com/watch?v=S9maJY5JcZc
+
+https://github.com/ArjunAranetaCodes/MoreCodes-Youtube/blob/master/mern-mongodb-login-reg/routes/Users.js

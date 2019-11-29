@@ -44,17 +44,22 @@ class Cities extends Component {
 					</input>
 				</div>
 				<div className="divlistaciudades">
-				<ul>
+				<ul className="ulciudades">
 				{filteredCity.map(ciudad => {
 					let rutaciudad = '/Paises/' + ciudad.ciudad;
 					
 					return (
-						<li className="listaciudades">
 						<Link to={rutaciudad} key={ciudad._id}>
-							<span className="textoboton">{ciudad.ciudad} - {ciudad.pais}
-							</span>
-						</Link>	
+						<div className="divciudades">
+						<li className="liciudades">
+						<button
+						className="botonciudades"
+						style={{backgroundImage: `url(${ciudad.img})`, backgroundPosition:"center"}}>
+						<p className="textoboton">-{ciudad.ciudad}--{ciudad.pais}-</p>
+						</button>
 						</li>
+						</div>
+						</Link>
 						);
 				})}
 				</ul>

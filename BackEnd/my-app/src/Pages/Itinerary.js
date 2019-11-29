@@ -20,7 +20,9 @@ class Itinerary extends React.Component {
     console.log(itinerary)
     return (
       <div>
-        {itinerary.length >0 ? <p>Hay</p> : <p>No hay</p>}
+        {itinerary.length >0 ? 
+        <div>Hay</div> : 
+        <div>No hay</div>}
       </div>
     );
 	}
